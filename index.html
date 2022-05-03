@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Esercizio HTML</title>
+   </head>
+
+     <!-- Contact Information -->
+
+     <body>
+        <main>
+           <form action="#" method="get">
+               <fieldset>
+                  <legend>
+                      <h2>Contact Information</h2>
+                  </legend>
+                  <p> Required fields are followed by <strong><abbr title="required">*</abbr></strong>
+                  </p>
+               <section>
+                  <div>
+                      <label for="name">
+                      <span>Name:</span>
+                      <strong><abbr title="required">*</abbr></strong>
+                      </label>
+                      <input type="text" id="name" name="name">
+                 </div>
+
+                 <div>
+                      <label for="surname">
+                      <span>Surname:</span>
+                      <strong><abbr title="required">*</abbr></strong>
+                      </label>
+                      <input type="text" id="surname" name="surname">
+                 </div>
+
+                 <div>
+                      <label for="dob">
+                      <span>Date of birth:</span>
+                      <strong><abbr title="required">*</abbr></strong>
+                      </label>
+                      <input type="date" id="dt" name="date">
+                 </div>
+
+                 <div>
+                      <label for="pn">
+                      <span>Phone number:</span>
+                      <strong><abbr title="required">*</abbr></strong>
+                      </label>
+                      <input type="number" id="numb" name="number">
+                 </div>
+
+                 <div>
+                      <label for="mail">
+                      <span>E-mail:</span>
+                      <strong><abbr title="required">*</abbr></strong>
+                      </label>
+                      <input type="email" id="mail" name="mail">
+                 </div>
+
+                 <div>
+                      <label for="pwd">
+                      <span>Password:</span>
+                      <strong><abbr title="required">*</abbr></strong>
+                      </label>
+                      <input type="password" id="pwd" name="password">
+                 </div>
+              </section>
+          </fieldset>
+
+          <!-- Plan and Pricing -->
+
+          <fieldset>
+              <legend>
+                  <h2>Plan and Prices</h2>
+              </legend>
+              <section>
+                 <div>
+                   <label for="subscription">Choose a Subscription</label>
+                   <strong><abbr title="required">*</abbr></strong>
+                   <select name="Subs" id="subs">
+                       <optgroup label="Free Memberships">
+                           <option value="free">Free</option>
+                       </optgroup>
+
+                       <optgroup label="Paid Memberships">
+                           <option value="basic">Basic 9.99€</option>
+                           <option value="intermediate">Intermediate 19.99€</option>
+                           <option value="advanced">Advanced 49.99€</option>
+                       </optgroup>
+                   </div>
+               </section>
+          </fieldset>
+
+         <!-- Pro benefits-->
+           
+            <div>
+               <label for="pro"><i>Want to add pro benefits?</i></label>
+               <input type="radio" name="prob" id="prob"><b>Yes</b>
+               <input type="radio" name="prob" id="prob checkout" required><b>No</b>
+            </div>
+
+         <!-- Payment Information -->
+
+              <fieldset>
+                  <legend>
+                      <h2>Payment Information</h2>
+                  </legend>
+                  <p> Required fields are followed by <strong><abbr title="required">*</abbr></strong>
+                  </p>
+               <section>
+                  <div>
+                    <p>
+                       <label for="card">
+                         <span>Card Type:</span>
+                         <strong><abbr title="required">*</abbr></strong>
+                       </label>
+                       <select id="card" name="usercard">
+                         <option value="visa">Visa</option>
+                         <option value="mc">Mastercard</option>
+                         <option value="amex">American Express</option>
+                       </select>
+                     </p>
+                     <p>
+                       <label for="number">
+                         <span>Card Number:</span>
+                         <strong><abbr title="required">*</abbr></strong>
+                       </label>
+                       <input type="tel" id="numb" name="cardnumber" max="12"  placeholder="xxxx-xxxx-xxxx" pattern="[0-9]{4}">
+                     </p>
+                     <p>
+                       <label for="cvc">
+                        <span>CVC</span>
+                        <strong><abbr title="required">*</abbr></strong>
+                       </label>
+                       <input type="tel" id="cvc" name="cvc" max="3" placeholder="xxx" pattern="[0-9\s]{3}">
+                     </p>
+                     <p>
+                       <label for="expiration">
+                         <span>Expiration Date:</span>
+                         <strong><abbr title="required">*</abbr></strong>
+                       </label>
+                       <input type="text" id="expiration" required="true" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
+                     </p>
+                      <label for="address">
+                         <span>Billing Address:</span>
+                         <strong><abbr title="required">*</abbr></strong>
+                      </label>
+                      <input type="text" id="address" name="address" placeholder="Street Address">
+                  </div>
+                </section>
+              </fieldset>
+            
+         <!-- Sign Up -->
+
+           <fieldset>
+              <section>
+                  <div>
+                     <button type="submit" name="sub" id="sub">Sign Up</button>
+                  </div>
+               </section>
+            </fieldset>
+         </form>
+      </main>
+  </body>
+</html>
