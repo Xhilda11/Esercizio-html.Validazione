@@ -25,7 +25,7 @@
                       <span>Name:</span>
                       <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="text" id="name" name="name">
+                      <input type="text" id="name" name="name" required>
                  </div>
 
                  <div>
@@ -33,7 +33,7 @@
                       <span>Surname:</span>
                       <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="text" id="surname" name="surname">
+                      <input type="text" id="surname" name="surname" required>
                  </div>
 
                  <div>
@@ -41,7 +41,7 @@
                       <span>Date of birth:</span>
                       <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="date" id="dt" name="date">
+                      <input type="date" id="dt" name="date" required>
                  </div>
 
                  <div>
@@ -49,7 +49,7 @@
                       <span>Phone number:</span>
                       <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="number" id="numb" name="number">
+                      <input type="number" id="numb" name="number" required>
                  </div>
 
                  <div>
@@ -57,7 +57,7 @@
                       <span>E-mail:</span>
                       <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="email" id="mail" name="mail">
+                      <input type="email" id="mail" name="mail" required>
                  </div>
 
                  <div>
@@ -65,7 +65,7 @@
                       <span>Password:</span>
                       <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="password" id="pwd" name="password">
+                      <input type="password" id="pwd" name="password" required>
                  </div>
               </section>
           </fieldset>
@@ -128,14 +128,14 @@
                          <span>Card Number:</span>
                          <strong><abbr title="required">*</abbr></strong>
                        </label>
-                       <input type="tel" id="numb" name="cardnumber" max="12"  placeholder="xxxx-xxxx-xxxx" pattern="[0-9]{4}">
+                       <input type="tel" id="numb" name="cardnumber" max="12"  placeholder="xxxx-xxxx-xxxx" pattern="[0-9]{4}" required>
                      </p>
                      <p>
                        <label for="cvc">
                         <span>CVC</span>
                         <strong><abbr title="required">*</abbr></strong>
                        </label>
-                       <input type="tel" id="cvc" name="cvc" max="3" placeholder="xxx" pattern="[0-9\s]{3}">
+                       <input type="tel" id="cvc" name="cvc" max="3" placeholder="xxx" pattern="[0-9\s]{3}" required>
                      </p>
                      <p>
                        <label for="expiration">
@@ -148,7 +148,7 @@
                          <span>Billing Address:</span>
                          <strong><abbr title="required">*</abbr></strong>
                       </label>
-                      <input type="text" id="address" name="address" placeholder="Street Address">
+                      <input type="text" id="address" name="address" placeholder="Street Address" required>
                   </div>
                 </section>
               </fieldset>
